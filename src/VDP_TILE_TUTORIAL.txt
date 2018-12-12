@@ -1,0 +1,13 @@
+Pattern Notes:
+
+	bits 0-10 = pattern number 
+
+	bit 11 = horizontal reverse bit (1=reverse)
+
+	bit 12 = vertical reverse bit (1=reverse)
+
+	bit 13 = palette low bit
+
+	bit 14 = palette high bit
+
+	bit 15 = priority

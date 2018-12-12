@@ -1,0 +1,61 @@
+; ******************************************************************
+; Constants
+; ******************************************************************
+
+; 68k memory map
+CTRL_1_DATA             EQU $00A10003
+CTRL_2_DATA             EQU $00A10005
+CTRL_X_DATA             EQU $00A10007
+CTRL_1_CONTROL          EQU $00A10009
+CTRL_2_CONTROL          EQU $00A1000B
+CTRL_X_control          EQU $00A1000D
+REG_HWVERSION           EQU $00A10001
+REG_TMS                 EQU $00A14000
+PSG_INPUT               EQU $00C00011
+RAM_START               EQU $00FF0000
+VDP_DATA                EQU $00C00000
+VDP_CONTROL             EQU $00C00004
+VDP_COUNTER             EQU $00C00008
+Z80_ADRESS              EQU $00A00000
+Z80_ADDRESS_SPACE       EQU $00A10000
+Z80_BUS                 EQU $00A11100
+Z80_RESET               EQU $00A11200
+
+; VDP access modes
+VDP_CRAM_READ           EQU $20000000
+VDP_CRAM_WRITE          EQU $C0000000
+VDP_VRAM_READ           EQU $00000000
+VDP_VRAM_WRITE          EQU $40000000
+VDP_VSRAM_READ          EQU $10000000
+VDP_VSRAM_WRITE         EQU $14000000
+
+VDP_VRAM_WRITE_A        EQU $40000003
+VDP_VRAM_WRITE_B        EQU $60000002
+VDP_VRAM_WRITE_WINDOW   EQU $40000002
+VDP_VRAM_WRITE_SPRITE   EQU $60000003
+
+; Buttons
+BUTTON_UP_PRESSED       EQU $01
+BUTTON_DOWN_PRESSED     EQU $02
+BUTTON_LEFT_PRESSED     EQU $04
+BUTTON_RIGHT_PRESSED    EQU $08
+BUTTON_B_PRESSED        EQU $10
+BUTTON_C_PRESSED        EQU $20
+BUTTON_A_PRESSED        EQU $40
+BUTTON_START_PRESSED    EQU $80
+
+; Program Specific
+MEM_GAME_STATE          EQU $00FF0000
+MEM_CONTROL_HELD        EQU $00FF0004
+MEM_CONTROL_PRESSED     EQU $00FF0006
+V_INTERUPT_COUNTER      EQU $00FF0008
+H_INTERUPT_COUNTER      EQU $00FF000C
+
+; Player memory
+MEM_PLAYER_STATE        EQU $00FF0010
+MEM_PLAYER_TIMING       EQU $00FF0014
+
+*~Font name~Courier New~
+*~Font size~10~
+*~Tab type~1~
+*~Tab size~4~
